@@ -9,7 +9,8 @@ on:
     branches: [ docker ]
   pull_request:
     branches: [ docker ]
-
+  schedule:
+    - cron: 00 01 * * *
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
